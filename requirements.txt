@@ -1,2 +1,5 @@
 aiohttp
+pytest-aiohttp
 pandas
+chatterbot_corpus
+chatterbot

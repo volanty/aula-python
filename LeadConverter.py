@@ -10,5 +10,8 @@ class LeadConverter:
         df = pd.DataFrame({"name": ["Elizeu", "Jurema", "Elizabeth"], "age": [40, 20, 30], "sex": ["m", "f", "f"]})
         return df.describe().to_string()
 
-    def get_lead_id(self, lead_id: str = "abc"):
-        print("lead " + lead_id)
+    def get_lead_id(self, lead_id: str) -> str:
+        return f"Olá lead {lead_id}"
+
+    def count_leads(self) -> int:
+        return self.max_leads
